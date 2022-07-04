@@ -1,0 +1,138 @@
+body {
+    margin: 0em;
+    background-color: #283433;
+}
+ /* 666666 */
+
+
+.appendIn {
+    margin: 2em;
+    margin-top: 2em;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.cardContainer{
+    margin: 2em;
+    background-color: #ffffff;
+    padding: 0em;
+    width: 15em;
+    display: flex;
+    flex-direction: column;
+    flex-grow: unset;
+    border-radius: 1em;
+}
+
+.image {
+    margin: 1em;
+    width: 7em;
+}
+
+.label {
+    border-top: .07em solid #888;
+    font-size: 1.5rem;
+    font-family: 'Arimo', sans-serif;
+    text-align: center;
+}
+
+.price{
+    font-size: 1.7em;
+    font-family: 'Arimo', sans-serif;
+    color: #aa2222;
+    text-align: center;
+}
+
+.details {
+    font-size: 1.2em;
+    font-family: 'Arimo', sans-serif;
+}
+
+.addToCart{
+    height: 2em;
+    font-size: 1em;
+    text-align: center;
+    text-justify: center;
+    border: .2em solid #150d5e;
+    color:#222;
+    border-radius: .3em;
+   
+}
+
+.addToCart:hover{
+    background-color: #150d5e;
+    color: #999999;
+    opacity: .9;
+}
+
+.hoverOn {
+    display:none;
+}
+
+.cardContainer:hover > .hoverOn{
+    display: inline-block;
+}
+
+.cardContainer:hover{
+    box-shadow: 0em 0em 4em#999999;
+}
+
+
+.cartBox{
+    background: #283433;
+    border:.01em solid #151719;border-top: 0;
+    height:5em;
+    width:100%;
+    display: flex;
+ }
+
+ .cartBox img {
+  height: 80%;
+  width: 4em;
+  margin: 10%;
+  border-radius: .5em;
+ }
+
+ .cartBox .boxChild {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #aaa;
+  font-size: 1em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ .cartBox .boxChild b {
+  color: #fff
+ }
+
+ .cartBox .multiplier {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 3em;
+    margin-top: .5em;
+    margin-bottom: .2em;
+    color: #aaa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+ }
+ 
+ .cartBox .multiplier svg {
+    width: 1em;
+    fill: #000;
+    cursor: pointer;
+ }
+
+ .cartBox .multiplier div {
+    margin-right: .6em;
+    margin-bottom: .3em;
+    display: flex;
+ }
+
+ .cartBox .multiplier div p {
+    margin: .1em;
+ }

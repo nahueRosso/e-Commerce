@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fireStore.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@1,700&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Arimo:ital@1&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
+    <title>Infinite Melody</title>
+</head>
+
+<body>
+   <div class="on-background" id="onBackground">
+        
+        <img src="./logo/guitarraLogo.png" >
+       
+        <div>
+        <p><b>Infinity melody is a company dedicated to the sale of guitars</b></p>
+        <button ><a href="#appenIn">Start now</a></button> 
+        </div>
+    </div>
+
+    <header>
+        
+        <a href="#" class="logo"><img src="./logo/guitarraLogo.png" alt=""></a>
+        <div><ul>
+            <li><a href="#">Home</a></li>
+
+            <li><a href="#appenIn" id="cartSidebar">Cart</a></li>
+            
+            <li><a href="#appenIn">products</a></li>
+            
+            <li><a href="#footerId">Contact</a></li>
+            
+        </ul>
+        </div> 
+        
+        <button id="svgList">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svgList" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svgCaretUp" viewBox="0 0 16 16">
+            <path d="M3.204 11h9.592L8 5.519 3.204 11zm-.753-.659 4.796-5.48a1 1 0 0 1 1.506 0l4.796 5.48c.566.647.106 1.659-.753 1.659H3.204a1 1 0 0 1-.753-1.659z"/></svg>
+              
+        </button>
+    </header>
+
+    <main>
+        
+        
+         
+        <div class="carts">           
+        <div class="image-container" id="imageContainer"></div>
+        
+        <div class="sidebar">
+            <button id="toggleBtn" class="toggle-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="caretRight" viewBox="0 0 16 16">
+                    <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="caretLeft" viewBox="0 0 16 16">
+                    <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+                </svg>
+                
+            </button>
+    
+            <div class="buttonIn">
+                <button class="svgSide glass" id="glassId">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="glassSvg" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg>
+                </button>
+                <button class="svgSide cart"  id="cartId">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="cartSvg" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
+                </button>
+            </div> 
+    
+            <div class="sidebarIn"> 
+                
+                
+                <div class="cartList" id="cartListById"></div>
+    
+               
+
+    
+                <div class="glassList">
+                    <button class="order firstSelector" id="uno">order</button> 
+                        <button class="order secondSelector">sort by price</button>
+                        <button class="order secondSelector">sort by alphabet</button>
+                    <button class="filter firstSelector" id="dos"> filter </button>
+                        <button class="filter brand secondSelector" id="tres">brand</button>
+                            <button class="filter brand thirdSelector"> Yamaha</button>  
+                            <button class="filter brand thirdSelector"> Taylor</button>  
+                            <button class="filter brand thirdSelector"> Fender</button>  
+                            <button class="filter brand thirdSelector"> Gibson</button>  
+                            <button class="filter brand thirdSelector"> Godin</button>
+                            <button class="filter brand thirdSelector"> Ibanez</button>  
+                            <button class="filter brand thirdSelector"> Martin & Co</button>       
+                        <button class="filter string secondSelector" id="cuatro">string</button> 
+                            <button class="filter string thirdSelector">Nylon</button>
+                            <button class="filter string thirdSelector">Steel</button>
+                        <button class="filter type secondSelector" id="cinco">type</button> 
+                            <button class="filter type thirdSelector">Acustic</button>
+                            <button class="filter type thirdSelector">Electro Acustic</button>               
+                            <button class="filter type thirdSelector">Electic</button>
+                </div>
+           
+               
+            </div>
+                <div class="submit"><p class="pSubmit" id="idPSubmit"></p>
+                <button type="submit" class="btnSubmit" id="idBtnSubmit">Buy the cart</button>
+                </div>
+        </div>
+        
+        <div id="appenIn" class="appendIn"></div>
+        </div>
+    </main>
+
+
+   
+
+    <footer id="footerId">
+        <div>
+            <h2>Stay connected</h2>
+            <p><a href="#">facebook</a></p>
+            <p><a href="#">twitter</a></p>
+            <h2>Help & contact</h2>
+            <p><a href="#">Seller information center</a></p>
+            <p><a href="#">Contact us</a></p>
+        </div>
+        <div>
+            <h2>About Infinity-Melody</h2>
+            <p><a href="#">Company Info</a></p>
+            <p><a href="#">News</a></p>
+            <p><a href="#">Investors</a></p>
+            <p><a href="#">Advertise with us</a></p>
+            <p><a href="#">policies</a></p>
+        </div>
+    </footer>
+    <script src="./js/card.js"></script>
+    <script src="./js/main.js" type="module"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,124 @@
+
+@media only screen and (min-width: 500px) {
+    .logo > img {
+        width: 10em;
+    }
+    
+    
+    header ul {
+        display: inline-block;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header ul li {
+        display: inline-block;
+        position: relative;
+        list-style: none;
+    }
+    
+    header ul li a{
+        display: inline-block;
+        position: relative;
+        margin: 0 15px;
+        text-decoration: none;
+        color:#fff;
+        letter-spacing: 2px;
+        font-weight: 500px;
+        transition: 0.6s;
+  }
+
+    header div {
+        display: inline-block;
+    }
+
+    header button {
+        display: none;
+    }
+
+    .on-background img{
+        width: 40%;
+        transition: .6s;
+    }
+
+    header ul li a{
+        display: inline-block;
+        position: relative;
+        margin: 0 15px;
+        letter-spacing: 2px;
+        font-weight: 500px;
+        font-size: .7em;
+    }
+
+    .sidebar {
+        width: 300px;
+        left: -300px; 
+      }
+      
+      .sidebar .toggle-btn {
+        left: 310px;
+      }
+
+      .cardContainer{
+        margin-top: 3em;
+        margin: 1em;
+        width: 18em;
+      }
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+    *{
+        margin: 0;
+    }
+
+    header ul li a{
+    display: inline-block;
+    position: relative;
+    margin: 0 15px;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    font-size: large;
+}
+
+    .on-background p {
+        font-size: 1.5em;
+        transition: .6s;
+    }
+    
+    .on-background img{
+           width: 30%;
+           transition: .6s;
+        }
+
+    .sidebar {
+        width: 350px;
+        left: -350px; 
+        }
+        
+        .sidebar .toggle-btn {
+        left: 360px;
+        }
+    
+
+    /* main .taskbar {
+        position: relative;
+        top: 100%;
+        left: 0%;
+        width:15%;
+        height: 100%;
+        background: #987005;
+        }   
+
+    main .carts {
+    } */
+    
+
+
+  
+
+}
+
