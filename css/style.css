@@ -228,6 +228,7 @@ body > div.sticky img{
     left: -250px;
     transition: all .5s linear;
     display: none;
+    z-index: 10;
     
   }
 

@@ -63,6 +63,7 @@ body {
     background-color: #150d5e;
     color: #999999;
     opacity: .9;
+    z-index: 1;
 }
 
 .hoverOn {
@@ -125,6 +126,11 @@ body {
     width: 1em;
     fill: #000;
     cursor: pointer;
+ }
+
+ .cartBox .multiplier button {
+    background: transparent;
+    border :none;
  }
 
  .cartBox .multiplier div {

@@ -63,13 +63,12 @@ const addEvent = () => {
           })
 }
 
- let add = 0; let multi = 0; let x = 1; let array = [];
- 
+ let add = 0; let multi = 0; let x = 1; let array = [];let y = 0;
+
+
 export const getProduct = async (id) =>{
 
-  
-
-  const docRef = doc(db, "products",`${id}`);
+    const docRef = doc(db, "products",`${id}`);
     
     const docSnap = await getDoc(docRef);
 
@@ -91,7 +90,7 @@ export const getProduct = async (id) =>{
 
       card2.getAttribute("id",docSnap.id)
       
-      card2.innerHTML = sidebarBuilder(docSnap.data().url, docSnap.data().brand, docSnap.data().model, docSnap.data().price, x); 
+      card2.innerHTML = sidebarBuilder(docSnap.data().url, docSnap.data().brand, docSnap.data().model, docSnap.data().price, x,y); 
 
       cartListById.append(card2);
 
@@ -101,7 +100,9 @@ export const getProduct = async (id) =>{
 
       card2.getAttribute("id",docSnap.id)
       
-      card2.innerHTML = sidebarBuilder(docSnap.data().url, docSnap.data().brand, docSnap.data().model, docSnap.data().price,1); 
+      card2.innerHTML = sidebarBuilder(docSnap.data().url, docSnap.data().brand, docSnap.data().model, docSnap.data().price,1,y); 
+
+      y = y + 1;
 
       cartListById.append(card2);
 
@@ -111,12 +112,54 @@ export const getProduct = async (id) =>{
 
      array.push(docSnap.id);
      
-    //  console.log(array);
+    //  console.log(cartList.children.lastChild.firstChild);
 
     add = add + docSnap.data().price;
     
     buyCart.textContent = `Total : $ ${add}`;
-      
+    
+    addEventDelte();
+
   }
 
+
+
+  const addEventDelte = () => {
+
+    const btnCross = document.querySelectorAll(".btnCross")
+            
+              btnCross.forEach(buyBtn =>{
+            
+                    buyBtn.addEventListener("click",(e) =>  {
+                      
+       let number1 = parseInt(document.getElementById(e.target.id).parentNode.parentNode.previousSibling.lastChild.lastChild.textContent);
+      console.log(number1);
+       let multi1  = parseInt(document.getElementById(e.target.id).parentNode.parentNode.lastChild.lastChild.textContent);
+      console.log(multi1);   
+       add = add-(number1*multi1)
+       
+       buyCart.textContent = `Total : $ ${add}`;
+       
+       cartList.removeChild(document.getElementById(e.target.id).parentNode.parentNode.parentNode);                  
+                      
+
+                        
+
+                    
+                      })
   
+            })
+  }
+
+
+
+
+
+
+
+
+  // export const delteProduct = async () =>{
+
+            
+
+  // }

@@ -4,6 +4,7 @@ getProducts();
 import { getProduct } from "./fireBase.js";
 getProduct();
 
+
 const cartSidebar = document.getElementById("cartSidebar")
 
 const idBtnSubmit = document.getElementById("idBtnSubmit")
@@ -37,7 +38,7 @@ const glassId = document.getElementById('glassId')
 const cartId = document.getElementById("cartId")
 
 window.addEventListener("scroll",()=>{
-    sidebar.classList.toggle("sidebarActive",window.scrollY > 700);
+    sidebar.classList.toggle("sidebarActive",window.scrollY > 650);
 })
 
 
@@ -96,6 +97,6 @@ glassId.addEventListener("click",()=>{
     
 })
 
-idBtnSubmit.addEventListener('click', _ => { // el _ es para indicar la ausencia de parametros
+idBtnSubmit.addEventListener('click', () => { 
     location.reload();
 });
