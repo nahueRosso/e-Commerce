@@ -62,6 +62,7 @@ body {
 .addToCart:hover{
     background-color: #150d5e;
     color: #999999;
+    box-shadow: 0em 0em 4em#150d5e;
     opacity: .9;
     z-index: 1;
 }
