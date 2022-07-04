@@ -4,10 +4,7 @@ getProducts();
 import { getProduct } from "./fireBase.js";
 getProduct();
 
-
 const cartSidebar = document.getElementById("cartSidebar")
-
-const idBtnSubmit = document.getElementById("idBtnSubmit")
 
 const imageContainer = document.getElementById("imageContainer")
 
@@ -96,7 +93,3 @@ glassId.addEventListener("click",()=>{
     sidebar.classList.toggle("cartActive")
     
 })
-
-idBtnSubmit.addEventListener('click', () => { 
-    location.reload();
-});

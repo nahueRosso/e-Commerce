@@ -133,33 +133,24 @@ export const getProduct = async (id) =>{
                     buyBtn.addEventListener("click",(e) =>  {
                       
        let number1 = parseInt(document.getElementById(e.target.id).parentNode.parentNode.previousSibling.lastChild.lastChild.textContent);
-      console.log(number1);
+      
        let multi1  = parseInt(document.getElementById(e.target.id).parentNode.parentNode.lastChild.lastChild.textContent);
-      console.log(multi1);   
+      
        add = add-(number1*multi1)
        
        buyCart.textContent = `Total : $ ${add}`;
        
        cartList.removeChild(document.getElementById(e.target.id).parentNode.parentNode.parentNode);                  
-                      
-
-                        
-
-                    
-                      })
-  
-            })
+          
+        })  
+    })
   }
 
 
+idBtnSubmit.addEventListener('click', () => { 
 
+    console.log(cartList);  
 
+    location.reload();
 
-
-
-
-  // export const delteProduct = async () =>{
-
-            
-
-  // }
+});
