@@ -152,7 +152,7 @@ header.navBar .svgCaretUp{
     position: relative;
     width: 100%;
     height: 100vh;
-    background: url(../fondo/fondo.png);
+    background: url(../fondo/fondo.jpg);
     background-size: cover;
     background-position: center 60%;
     background-attachment: fixed ;
