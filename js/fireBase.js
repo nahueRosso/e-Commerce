@@ -45,7 +45,6 @@ export const getProducts = async () =>{
   addEvent();
 }
 
-
 const duplicate = (arr, val) => {
   return arr.some(x => val === x);
 }
@@ -59,12 +58,10 @@ const addEvent = () => {
                   buyBtn.addEventListener("click",(e) =>  {
                           getProduct(e.target.id)
                   })
-
           })
 }
 
- let add = 0; let multi = 0; let x = 1; let array = [];let y = 0;
-
+let add = 0; let multi = 0; let x = 1; let array = [];let y = 0;
 
 export const getProduct = async (id) =>{
 
@@ -90,7 +87,7 @@ export const getProduct = async (id) =>{
 
       card2.getAttribute("id",docSnap.id)
       
-      card2.innerHTML = sidebarBuilder(docSnap.data().url, docSnap.data().brand, docSnap.data().model, docSnap.data().price, x,y); 
+      card2.innerHTML = sidebarBuilder(docSnap.data().url, docSnap.data().brand, docSnap.data().model, docSnap.data().price, x , y); 
 
       cartListById.append(card2);
 
@@ -108,21 +105,17 @@ export const getProduct = async (id) =>{
 
       multi = docSnap.id;
 
-     }
+    }
 
      array.push(docSnap.id);
-     
-    //  console.log(cartList.children.lastChild.firstChild);
 
     add = add + docSnap.data().price;
     
     buyCart.textContent = `Total : $ ${add}`;
     
     addEventDelte();
-
-  }
-
-
+ 
+  };
 
   const addEventDelte = () => {
 
