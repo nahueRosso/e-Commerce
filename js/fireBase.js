@@ -133,17 +133,20 @@ export const getProduct = async (id) =>{
        
        buyCart.textContent = `Total : $ ${add}`;
        
-       cartList.removeChild(document.getElementById(e.target.id).parentNode.parentNode.parentNode);                  
+       cartList.removeChild(document.getElementById(e.target.id).parentElement.parentElement.parentElement);                  
           
-        })  
+                      
+        
+      })  
     })
   }
 
-
 idBtnSubmit.addEventListener('click', () => { 
+        
+        console.log(cartList);  
+        add = 0;
+        buyCart.textContent="Total : $ 0";
+        cartList.innerHTML="";
 
-    console.log(cartList);  
-
-    location.reload();
-
-});
+        // location.reload();
+      });
